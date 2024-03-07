@@ -23,7 +23,7 @@ https://github.com/TimurTsedik/VKinder
 telegram bot for learning English
 https://github.com/TimurTsedik/telegram_english_bot
 
-backup photos from VK profile ti Yandex disk
+backup photos from VK profile onto Yandex disk
 https://github.com/TimurTsedik/netology_api_VK_YA_exercise
 
 Sertificates:
