@@ -1,6 +1,7 @@
 <h1>Hi, I'm Timur Tsedik and I'm a developer</h1>
 
 <h2>Telegram - https://t.me/TinTinSmith
+  
 Mail - timur.tsedik@gmail.com
 
 Key skills: Python, SQL (MSSQL, ORACLE, Postgres), VB6, VBA</h2>
