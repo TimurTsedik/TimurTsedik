@@ -14,6 +14,7 @@ Key skills: Python, SQL (MSSQL, ORACLE, Postgres), VB6, VBA</h2>
 <h3>My works:</h3> 
 Created an app to controll FX and payment position in the bank, integrated with ABS
 
+those projects on Python:
 findning couple via VK API, VK bot for dating
 https://github.com/TimurTsedik/VKinder
 
