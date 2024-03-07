@@ -1,16 +1,26 @@
-### Hi there 👋
+<h1>Hi, I'm Timur Tsedik and I'm a developer</h1>
 
-<!--
-**TimurTsedik/TimurTsedik** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h2>Telegram - https://t.me/TinTinSmith
+Mail - timur.tsedik@gmail.com
 
-Here are some ideas to get you started:
+Key skills: Python, SQL (MSSQL, ORACLE, Postgres), VB6, VBA</h2>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<h3>My works:</h3> 
+
+
+findning couple via VK API, VK bot for dating
+https://github.com/TimurTsedik/VKinder
+
+telegram bot for learning English
+https://github.com/TimurTsedik/telegram_english_bot
+
+backup photos from VK profile ti Yandex disk
+https://github.com/TimurTsedik/netology_api_VK_YA_exercise
+
+Sertificates:
+
+![certificate-5.png](certificate-5.png)
+![certificate-4.png](certificate-4.png)
+![certificate-3.png](certificate-3.png)
+![certificate-2.png](certificate-2.png)
+![certificate.png](certificate.png)
