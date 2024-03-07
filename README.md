@@ -1,3 +1,6 @@
+<image src="me.jpg" width="300">
+
+
 <h1>Hi, I'm Timur Tsedik and I'm a developer</h1>
 
 <h2>Telegram - https://t.me/TinTinSmith
