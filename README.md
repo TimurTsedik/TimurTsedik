@@ -12,7 +12,7 @@ Key skills: Python, SQL (MSSQL, ORACLE, Postgres), VB6, VBA</h2>
 <h2>Expirenced on integrating into banking ABS</h2>
   
 <h3>My works:</h3> 
-Created an app to controll FX and payment position for the commercial bank, integrated with ABS<br /><br />
+Created an app to controll FX and payment position for the commercial bank, fully integrated with ABS<br /><br />
 
 those projects on Python:<br />
 
