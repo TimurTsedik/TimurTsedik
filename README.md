@@ -28,6 +28,7 @@ https://github.com/TimurTsedik/netology_api_VK_YA_exercise
 
 Sertificates:
 
+![certificate-6.png](certificate-6.png)
 ![certificate-5.png](certificate-5.png)
 ![certificate-4.png](certificate-4.png)
 ![certificate-3.png](certificate-3.png)
