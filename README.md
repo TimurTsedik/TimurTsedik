@@ -14,7 +14,7 @@ Key skills: Python, SQL (MSSQL, ORACLE, Postgres), VB6, VBA</h2>
 <h3>My works:</h3> 
 Created an app to controll FX and payment position for the commercial bank, fully integrated with automated bank system<br /><br />
 
-those projects on Python:<br />
+New projects on Python:<br />
 
 Avito website parsing bot on Selenium engine, containerised solution
 with storing results in DB and API for communicating https://github.com/TimurTsedik/avito_parsing_bot
