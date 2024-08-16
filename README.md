@@ -16,6 +16,11 @@ Created an app to controll FX and payment position for the commercial bank, full
 
 those projects on Python:<br />
 
+Avito website parsing bot on Selenium engine, containerised solution
+with storing results in DB and API for communicating https://github.com/TimurTsedik/avito_parsing_bot
+
+Documetn searching bot by ElasticEngine
+Containerised solution https://github.com/TimurTsedik/documentsSearchEngine_by_ElasticSearch
 
 findning couple via VK API, VK bot for dating
 https://github.com/TimurTsedik/VKinder
