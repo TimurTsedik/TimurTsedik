@@ -31,6 +31,9 @@ https://github.com/TimurTsedik/telegram_english_bot
 backup photos from VK profile onto Yandex disk
 https://github.com/TimurTsedik/netology_api_VK_YA_exercise
 
+migration tool from local Jira to Bitrix24
+https://github.com/TimurTsedik/jira_to_bitrix_migration_tool
+
 Sertificates:
 
 ![certificate6.png](certificate7.png)
