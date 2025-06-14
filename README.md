@@ -22,7 +22,7 @@ https://github.com/TimurTsedik/jira_to_bitrix_migration_tool
 Avito website parsing bot on Selenium engine, containerised solution
 with storing results in DB and API for communicating https://github.com/TimurTsedik/avito_parsing_bot
 
-Documetn searching bot by ElasticEngine
+Document searching bot by ElasticEngine
 Containerised solution https://github.com/TimurTsedik/documentsSearchEngine_by_ElasticSearch
 
 findning couple via VK API, VK bot for dating
