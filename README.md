@@ -7,7 +7,7 @@
   
 Mail - timur.tsedik@gmail.com
 
-Key skills: Python, SQL (MSSQL, ORACLE, Postgres), VB6, VBA</h2>
+Key skills: AI-agents, ollama, Python, SQL (MSSQL, ORACLE, Postgres), VB6, VBA</h2>
 
 <h2>Expirenced on integrating into banking ABS</h2>
   
