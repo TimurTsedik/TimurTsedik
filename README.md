@@ -16,6 +16,12 @@ Created an app to controll FX and payment position for the commercial bank, full
 
 New projects on Python:<br />
 
+Smart AI agent for everyday routine
+https://github.com/TimurTsedik/simple_ai_agent_bot
+
+Photo archive helper tool: finds and clears dupes, corrects improper orientation, with web-control panel
+https://github.com/TimurTsedik/photo-cleaner
+
 migration tool from local Jira to Bitrix24
 https://github.com/TimurTsedik/jira_to_bitrix_migration_tool
 
@@ -33,13 +39,3 @@ https://github.com/TimurTsedik/telegram_english_bot
 
 backup photos from VK profile onto Yandex disk
 https://github.com/TimurTsedik/netology_api_VK_YA_exercise
-
-Sertificates:
-
-![certificate6.png](certificate7.png)
-![certificate-6.png](certificate-6.png)
-![certificate-5.png](certificate-5.png)
-![certificate-4.png](certificate-4.png)
-![certificate-3.png](certificate-3.png)
-![certificate-2.png](certificate-2.png)
-![certificate.png](certificate.png)
