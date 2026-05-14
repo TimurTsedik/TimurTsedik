@@ -52,18 +52,11 @@ I like systems that actually work in production, solve concrete business problem
 
 ## Banking automation experience
 
-Built and maintained an **FX and payment position management system** for a commercial bank, integrated with the bank’s core ABS and used in real treasury operations.
+For more than 20 years I have been working with banking automation, treasury operations, ABS integrations and SQL-heavy internal systems.
 
-The system helped control:
+My key banking project is **FX Position** — a real-time FX and payment position management system for a commercial bank, used by the treasury department in daily operations.
 
-- foreign exchange position
-- payment position
-- expected incoming and outgoing payments
-- treasury operational data
-- real-time information from banking systems
-- business-critical decision support for treasury users
-
-This experience gave me a strong understanding of how to build systems where correctness, reliability, auditability and integration with existing infrastructure matter.
+[Read more about FX Position →](./FX_POSITION.md)
 
 ---
 
