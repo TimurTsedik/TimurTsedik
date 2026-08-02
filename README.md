@@ -62,6 +62,22 @@ My key banking project is **FX Position** — a real-time FX and payment positio
 
 ## Featured projects
 
+
+### [FX & Payment Position System](https://landing.fxposition.biz)
+
+Commercial banking treasury system integrated with a core ABS.
+
+Built for real treasury operations and focused on:
+
+- FX position control
+- payment position control
+- integration with banking data sources
+- SQL-based data processing
+- operational reliability
+- business-critical daily usage
+
+---
+
 ### [Simple AI Agent Bot](https://github.com/TimurTsedik/simple_ai_agent_bot)
 
 A practical AI assistant platform based on Telegram.
@@ -88,21 +104,6 @@ Features:
 - orientation correction experiments
 - web control panel
 - practical workflow for large personal archives
-
----
-
-### [FX & Payment Position System](https://landing.fxposition.biz)
-
-Commercial banking treasury system integrated with a core ABS.
-
-Built for real treasury operations and focused on:
-
-- FX position control
-- payment position control
-- integration with banking data sources
-- SQL-based data processing
-- operational reliability
-- business-critical daily usage
 
 ---
 
