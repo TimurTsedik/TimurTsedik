@@ -77,6 +77,13 @@ Built for real treasury operations and focused on:
 - business-critical daily usage
 
 ---
+### [Offline pocket Android CRM: Sales Assisnant](https://sales-assistant.app)
+
+Practical tool for salespeople. Everything about every of your client in one app
+Key ideas:
+- secure (all the data is in your device)
+- useful
+- free
 
 ### [Simple AI Agent Bot](https://github.com/TimurTsedik/simple_ai_agent_bot)
 
