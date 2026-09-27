@@ -1,231 +1,44 @@
-<div align="center">
+<img src="me.jpg" width="120" align="left" alt="Timur Tsedik" style="border-radius: 50%; margin-right: 16px;" />
 
-<img src="me.jpg" width="180" alt="Timur Tsedik" style="border-radius: 50%;" />
+# Timur Tsedik
 
-# Hi, I'm Timur Tsedik
+**Ex-Head of Treasury · Python engineer · treasury & payments systems**
+Ashdod, Israel · +972 55 295 3793 · timur.tsedik@gmail.com · [LinkedIn](https://www.linkedin.com/in/timur-tsedik-429b8b72/)
 
-### I build practical automation systems: AI agents, banking integrations, data pipelines and internal tools.
+<br clear="left"/>
 
-📍 Israel  
-📬 timur.tsedik@gmail.com  
-💬 Telegram: [@TinTinSmith](https://t.me/TinTinSmith)
+I ran bank treasury for 27 years, from FX dealer to Head of Treasury, and I've been building the software treasury runs on for almost as long. Day to day I write Python backends.
 
-</div>
+## FxPosition: real-time treasury position platform
 
----
+![FxPosition: FX position screen with live P/L, limits and rate sources](./fxposition-position.png)
 
-## About me
+Real-time FX, payment and cash positions for a bank treasury. It started in 1999 as my own tool and followed me through three banks; in 2023 I rebuilt it from scratch. **It is now in production rollout at a top-100 Russian bank:** ~15 currencies, market rates every 5 seconds, core banking data every 30 seconds.
 
-I am a developer with **20+ years of experience** in building real-world automation systems for business-critical processes.
+- Live P/L against market rates, including synthetic crosses through a bridge currency
+- Planned vs actual payment matching: partial matches, multiple candidates, no double counting
+- Read-only integration with the bank's Oracle core system; rate sources with priority and failover
+- Immutable audit trail; one request ID links the audit record, the logs and the background job
+- Delivered as an offline kit into the bank's closed network: 26 releases in the first 6 weeks of rollout
 
-My strongest background is in **banking automation**, especially treasury systems, ABS integrations, SQL-heavy data processing, and operational tools used by real business users.
+**Stack:** Python 3.12 · FastAPI · SQLAlchemy 2 · PostgreSQL · Oracle · pytest (~3,800 tests) · mypy strict · Docker · GitHub Actions · React + TypeScript
 
-Today I focus on practical AI and automation:  
-**AI agents, Telegram bots, LLM integrations, backend systems, data pipelines, internal tools and legacy system modernization.**
+[Product site](https://fxposition.ru/en) · [Case study: architecture and hard problems](./FX_POSITION.md) · Live demo at [fxposition.biz](https://fxposition.biz), access on request
+<sub>FxPosition is a commercial product, so its source is closed. The architecture is described in the case study.</sub>
 
-I like systems that actually work in production, solve concrete business problems, and survive contact with real users, messy data and legacy infrastructure.
+## Selected projects
 
----
+| | |
+|---|---|
+| [key-service](https://github.com/TimurTsedik/key-service) | Envelope-encryption key service: releases a file key only after a signed grant passes ordered policy checks |
+| [double-brained](https://github.com/TimurTsedik/double-brained) | A second brain in Telegram: notes and voice in, answers grounded in your own sources out |
+| [simple_ai_agent_bot](https://github.com/TimurTsedik/simple_ai_agent_bot) | Telegram AI agent: voice-to-text, agentic tool loop, skills and memory, admin UI for observability |
+| [media-to-wiki-convertor](https://github.com/TimurTsedik/media-to-wiki-convertor) | CLI that turns audio and video into a structured Obsidian wiki |
+| [Sales Assistant](https://sales-assistant.app) | Offline Android CRM, built for one real salesperson — my wife. On-device speech recognition, no server |
 
-## Core expertise
+## Stack
 
-![Python](https://img.shields.io/badge/Python-Backend%20%7C%20Automation-blue)
-![SQL](https://img.shields.io/badge/SQL-Oracle%20%7C%20MSSQL%20%7C%20PostgreSQL-lightgrey)
-![AI Agents](https://img.shields.io/badge/AI%20Agents-LLM%20Automation-purple)
-![Docker](https://img.shields.io/badge/Docker-Containerized%20Solutions-blue)
-![Banking](https://img.shields.io/badge/Banking-ABS%20Integrations-darkgreen)
-![Legacy](https://img.shields.io/badge/Legacy-VB6%20%7C%20VBA-orange)
+**Daily:** Python, FastAPI, Falcon, SQLAlchemy, PostgreSQL, Docker, pytest
+**Also:** Oracle, MS SQL, REST integrations, LLM tooling, React + TypeScript
 
-### Main areas
-
-- AI agents and LLM-based automation
-- Python backend development
-- Banking ABS integrations
-- Treasury automation systems
-- SQL, data pipelines and reporting
-- Telegram bots and internal business tools
-- Dockerized applications
-- Legacy system modernization
-- Web APIs and service architecture
-
----
-
-## Banking automation experience
-
-For more than 20 years I have been working with banking automation, treasury operations, ABS integrations and SQL-heavy internal systems.
-
-My key banking project is **FX Position** — a real-time FX and payment position management system for a commercial bank, used by the treasury department in daily operations.
-
-[Read more about FX Position →](./FX_POSITION.md)
-
----
-
-## Featured projects
-
-
-### [FX & Payment Position System](https://landing.fxposition.biz)
-
-Commercial banking treasury system integrated with a core ABS.
-
-Built for real treasury operations and focused on:
-
-- FX position control
-- payment position control
-- integration with banking data sources
-- SQL-based data processing
-- operational reliability
-- business-critical daily usage
-
----
-### [Offline pocket Android CRM: Sales Assistant](https://sales-assistant.app)
-
-Practical tool for salespeople. Everything about every of your client in one app
-Key ideas:
-- secure (all the data is in your device)
-- useful
-- free
-
-### [Simple AI Agent Bot](https://github.com/TimurTsedik/simple_ai_agent_bot)
-
-A practical AI assistant platform based on Telegram.
-
-Key ideas:
-
-- Telegram interface
-- voice input via Whisper
-- multi-user context
-- agent-style architecture
-- tool-based automation
-- foundation for personal and business AI workflows
-
----
-
-### [Photo Cleaner](https://github.com/TimurTsedik/photo-cleaner)
-
-A tool for managing large photo archives.
-
-Features:
-
-- duplicate detection
-- photo archive cleanup
-- orientation correction experiments
-- web control panel
-- practical workflow for large personal archives
-
----
-
-### [Jira to Bitrix24 Migration Tool](https://github.com/TimurTsedik/jira_to_bitrix_migration_tool)
-
-Migration utility for moving data from a local Jira installation to Bitrix24.
-
-Focus:
-
-- business process migration
-- data transformation
-- automation of repetitive migration steps
-- practical tooling for real operational needs
-
----
-
-### [Avito Parsing Bot](https://github.com/TimurTsedik/avito_parsing_bot)
-
-Containerized Selenium-based parsing system.
-
-Includes:
-
-- website parsing
-- database storage
-- API for communication
-- Dockerized deployment
-- automation around classified ads monitoring
-
----
-
-### [Document Search Engine by Elasticsearch](https://github.com/TimurTsedik/documentsSearchEngine_by_ElasticSearch)
-
-Document search bot based on Elasticsearch.
-
-Focus:
-
-- document indexing
-- search automation
-- containerized deployment
-- practical information retrieval workflow
-
----
-
-## More projects
-
-### [VKinder](https://github.com/TimurTsedik/VKinder)
-
-VK API dating bot.
-
-### [Telegram English Bot](https://github.com/TimurTsedik/telegram_english_bot)
-
-Telegram bot for learning English.
-
-### [VK to Yandex Disk Photo Backup](https://github.com/TimurTsedik/netology_api_VK_YA_exercise)
-
-Utility for backing up photos from a VK profile to Yandex Disk.
-
----
-
-## Tech stack
-
-### Languages and platforms
-
-- Python
-- SQL
-- VB6
-- VBA
-
-### Databases
-
-- PostgreSQL
-- Oracle
-- Microsoft SQL Server
-- SQLite
-- Elasticsearch
-
-### Backend and automation
-
-- Falcon
-- FastAPI
-- Telegram Bots
-- Selenium
-- REST APIs
-- Docker
-- Docker Compose
-
-### AI and LLM tools
-
-- AI agents
-- Ollama
-- OpenRouter
-- Whisper
-- LLM-based automation
-
----
-
-## What I am interested in
-
-I am open to selected projects related to:
-
-- AI agents
-- business process automation
-- banking and fintech integrations
-- internal tools
-- data pipelines
-- backend systems
-- legacy modernization
-- Telegram bots and automation interfaces
-
-I am especially interested in projects where software solves a real operational problem, reduces manual work, or gives business users better control over complex processes.
-
----
-
-<div align="center">
-
-### Practical automation. Real business value. Systems that work.
-
-</div>
+Open to roles in Israel where treasury and engineering meet: fintech (payments, treasury, FX, liquidity), banking software vendors, treasury technology teams.

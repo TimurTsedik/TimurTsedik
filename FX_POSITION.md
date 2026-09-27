@@ -1,158 +1,55 @@
-# FX Position
+# FxPosition: case study
 
-## Real-time FX and payment position management system for commercial banking treasury
+**Real-time FX, payment and cash position platform for a bank treasury**
+Role: sole designer and developer · 2023–present · In production rollout at a top-100 Russian bank
 
-**FX Position** is a banking treasury automation system designed to control foreign exchange and payment positions in real time.
+![FxPosition: FX position screen](./fxposition-position.png)
 
-The system was built and maintained for a commercial bank, integrated with the bank’s core ABS, and used by the treasury department in daily operations.
+## The problem
 
----
+Every morning a bank treasury has to answer three questions: where is our FX position, will the nostro accounts cover today's payments, and how much cash sits in each branch. At most mid-size banks the answer comes from Excel built on yesterday's files, rates typed in by hand, and reconciliation against the core banking system done on paper. By noon the morning position is already out of date.
 
-## Business problem
+I lived with this problem for 27 years in bank treasury, 18 of them in leadership roles. In 1999 I started writing my own tool for it, and the tool followed me through three banks. In 2023 I rebuilt it from scratch as FxPosition.
 
-Treasury needs to understand the bank’s current and expected position at any moment.
+## The result
 
-In real banking operations, this information is often distributed across multiple systems, operation types, accounts, payment documents and internal data sources.
+- The first customer is a top-100 Russian bank
+- Up to 15 users; positions in ~15 currencies
+- In my own treasury, earlier versions of the tool let a desk of 2 do the work that used to take 5
+- Market rates refresh every 5 seconds; core banking data is pulled every 30 seconds, so the position is at most half a minute behind reality instead of a day
+- 26 releases in the first 6 weeks of rollout (1.2.0 → 1.2.25)
 
-Without a dedicated position management system, treasury users have to collect and verify data manually. This increases operational risk, slows down decision-making and makes it harder to control FX exposure and payment liquidity.
+## Architecture
 
-**FX Position solves this problem by giving treasury users a consolidated operational view of the bank’s FX and payment position.**
+```
+ Oracle core banking (read-only) ──► source adapters ──► import workers ──┐
+ Market / central-bank rate feeds ──► rate adapters (priority, failover) ──┤
+                                                                            ▼
+                         application services (pure business rules, ports)
+                                                                            │
+                          PostgreSQL ◄── repositories ── projections (positions, P/L)
+                                                                            │
+                                           FastAPI ──► React/TypeScript UI
+```
 
----
+- **Ports and adapters, enforced.** 14 import-linter contracts, each with an empty allowlist, run in CI. Business rules never import SQLAlchemy. Facade layers can't touch the core-banking adapters. Swapping Oracle for another source changes one package.
+- **Transaction ownership at the boundary.** Repositories never commit. The route handler or worker owns the unit of work.
+- **Contract-first frontend.** TypeScript types are generated from OpenAPI, and CI fails if they drift.
 
-## What the system controls
+## Hard problems worth talking about
 
-FX Position helps treasury users monitor and control:
+**Payment matching without double counting.** Planned payments are matched against executed core-banking documents. A match can be full or partial, and the system offers several candidates without choosing for the user. The rule that matters most: the same money is never counted twice in the position. The implementation takes a row lock, checks that the source document isn't already actively matched (a duplicate returns 409), inserts the match, recomputes the row status from active matches, and writes the audit record, all in one transaction.
 
-- current FX position
-- planned FX position
-- payment position
-- expected incoming payments
-- expected outgoing payments
-- actual and planned balances
-- treasury deals
-- client currency operations
-- correspondent / nostro account balances
-- operational data received from the core ABS
+**Rates you can trust.** There are multiple rate sources with priority and automatic fallback when a source goes dark. "Live", "market closed" and "stale" are distinct states. If no direct quote exists, a cross rate is synthesised through a bridge currency.
 
-The main goal of the system is simple:
+**Observability judged by data, not processes.** A job counts as healthy when its data actually refreshed, not when its process is running. One request ID links the error message the user sees to the log lines, the audit record and the background run, so support can go from a user's screenshot to the root cause in one search.
 
-> give treasury users reliable operational information when they need to make decisions.
+**Shipping into a closed bank perimeter.** The product goes in as an offline kit: container images as tarballs, a single PDF of documentation, a software bill of materials scanned for vulnerabilities. It also includes TLS, security events forwarded to the bank's SIEM, and runbooks for install, upgrade, backup and restore.
 
----
+## Stack
 
-## Key capabilities
+Python 3.12 · FastAPI · SQLAlchemy 2 · Alembic · Pydantic v2 · PostgreSQL · Oracle (oracledb) · pytest (~3,800 tests) · mypy strict · ruff · import-linter · Docker · GitHub Actions · React 19 · TypeScript · MUI · TanStack Query · AG Grid
 
-FX Position supports:
+## Links
 
-- real-time FX position control
-- real-time payment position control
-- integration with the bank’s core ABS
-- loading and processing of banking operations
-- classification of operations by business meaning
-- monitoring of expected incoming and outgoing payments
-- control of planned and actual balances
-- treasury decision support
-- operational reporting
-- user access separation
-- audit of user actions
-- diagnostics of data inconsistencies
-- support for daily treasury workflows
-
----
-
-## My role
-
-I designed, built, maintained and continuously improved the system.
-
-My responsibilities included:
-
-- business analysis of treasury workflows
-- architecture of the solution
-- database design
-- SQL logic
-- ABS integration logic
-- import mechanisms
-- data processing rules
-- UI logic
-- access control
-- audit and logging
-- production support
-- diagnostics of incorrect or inconsistent data
-- adaptation of the system to changing business requirements
-
-This was not only a technical project. It required deep understanding of treasury operations, banking workflows, data reliability and the real cost of operational mistakes.
-
----
-
-## Technical context
-
-The system was built around SQL-heavy processing and integration with banking data sources.
-
-Technical areas involved:
-
-- VB6
-- SQL
-- Oracle
-- Microsoft SQL Server
-- PostgreSQL
-- ABS integration
-- treasury data processing
-- FX deal processing
-- payment flow processing
-- banking operation classification
-- reporting
-- audit logging
-- user rights management
-- legacy system support
-
-The system combined legacy banking infrastructure with practical operational tooling for business users.
-
----
-
-## Business value
-
-FX Position gave treasury users better visibility and faster access to operational data.
-
-The system helped the bank:
-
-- control FX risk more effectively
-- control payment liquidity
-- reduce manual work
-- reduce dependency on fragmented data checks
-- react faster to operational changes
-- improve transparency of treasury operations
-- support daily decision-making with consolidated data
-- maintain operational continuity in a business-critical area
-
-For treasury, speed and accuracy are not cosmetic improvements. They directly affect the quality of decisions and the bank’s ability to manage risk.
-
----
-
-## Why this project matters
-
-FX Position is the strongest example of my engineering profile.
-
-It shows that I can build systems at the intersection of:
-
-- banking domain knowledge
-- business-critical operations
-- complex SQL
-- legacy infrastructure
-- production support
-- practical software development
-- long-term system evolution
-
-This is not a demo or experimental project.
-
-It is a real production system created for real treasury users, real banking operations and real operational responsibility.
-
----
-
-## Summary
-
-**FX Position** is a practical treasury automation system that helps a commercial bank control FX and payment positions in daily operations.
-
-It reflects my main engineering strength:
-
-> building reliable automation systems for complex real-world business processes.
+Product site: [fxposition.ru/en](https://fxposition.ru/en) · Live demo: [fxposition.biz](https://fxposition.biz), access on request · Source is closed (commercial product)
