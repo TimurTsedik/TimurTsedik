@@ -3,7 +3,7 @@
 # Timur Tsedik
 
 **Ex-Head of Treasury · Python engineer · treasury & payments systems**
-Ashdod, Israel · +972 55 295 3793 · timur.tsedik@gmail.com · [LinkedIn](https://www.linkedin.com/in/timur-tsedik-429b8b72/)
+Ashdod, Israel · +972 55 295 3793 · timur.tsedik@gmail.com · [LinkedIn](https://www.linkedin.com/in/timurtsedik/)
 
 <br clear="left"/>
 
