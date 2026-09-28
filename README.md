@@ -11,7 +11,7 @@ I ran bank treasury for 27 years, from FX dealer to Head of Treasury, and I've b
 
 ## FxPosition: real-time treasury position platform
 
-![FxPosition: FX position screen with live P/L, limits and rate sources](./fxposition-position.png)
+![FxPosition 1.2.25: FX position with live P/L, limit utilization and a step-by-step P/L explanation](./fxposition-position.png)
 
 Real-time FX, payment and cash positions for a bank treasury. It started in 1999 as my own tool and followed me through three banks; in 2023 I rebuilt it from scratch. **It is now in production rollout at a top-100 Russian bank:** ~15 currencies, market rates every 5 seconds, core banking data every 30 seconds.
 

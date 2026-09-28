@@ -3,7 +3,7 @@
 **Real-time FX, payment and cash position platform for a bank treasury**
 Role: sole designer and developer · 2023–present · In production rollout at a top-100 Russian bank
 
-![FxPosition: FX position screen](./fxposition-position.png)
+![FxPosition 1.2.25: FX position with limit utilization and a step-by-step P/L explanation](./fxposition-position.png)
 
 ## The problem
 
@@ -45,6 +45,10 @@ I lived with this problem for 27 years in bank treasury, 18 of them in leadershi
 **Observability judged by data, not processes.** A job counts as healthy when its data actually refreshed, not when its process is running. One request ID links the error message the user sees to the log lines, the audit record and the background run, so support can go from a user's screenshot to the root cause in one search.
 
 **Shipping into a closed bank perimeter.** The product goes in as an offline kit: container images as tarballs, a single PDF of documentation, a software bill of materials scanned for vulnerabilities. It also includes TLS, security events forwarded to the bank's SIEM, and runbooks for install, upgrade, backup and restore.
+
+The same screen in the Amber Terminal theme, built for dealing-room monitors:
+
+![FxPosition in the Amber Terminal theme](./fxposition-amber.png)
 
 ## Stack
 
