@@ -7,7 +7,7 @@ Ashdod, Israel · +972 55 295 3793 · timur.tsedik@gmail.com · [LinkedIn](https
 
 <br clear="left"/>
 
-I ran bank treasury for 27 years, from FX dealer to Head of Treasury, and I've been building the software treasury runs on for almost as long. Day to day I write Python backends.
+I spent 24 years in bank treasury, from FX dealer to Head of Treasury, and I've been building the software treasury runs on for almost as long. Day to day I write Python backends.
 
 ## FxPosition: real-time treasury position platform
 

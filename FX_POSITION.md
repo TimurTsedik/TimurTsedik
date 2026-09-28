@@ -9,7 +9,7 @@ Role: sole designer and developer · 2023–present · In production rollout at 
 
 Every morning a bank treasury has to answer three questions: where is our FX position, will the nostro accounts cover today's payments, and how much cash sits in each branch. At most mid-size banks the answer comes from Excel built on yesterday's files, rates typed in by hand, and reconciliation against the core banking system done on paper. By noon the morning position is already out of date.
 
-I lived with this problem for 27 years in bank treasury, 18 of them in leadership roles. In 1999 I started writing my own tool for it, and the tool followed me through three banks. In 2023 I rebuilt it from scratch as FxPosition.
+I lived with this problem for 24 years in bank treasury, 18 of them in leadership roles. In 1999 I started writing my own tool for it, and the tool followed me through three banks. In 2023 I rebuilt it from scratch as FxPosition.
 
 ## The result
 
